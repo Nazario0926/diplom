@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Экстрим Архыз</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Экстрим Архыз">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#tours">Туры</a></li>
+                <li class="dropdown">
+                    <a href="#summer">Летние услуги</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#quad">Квадроциклы</a></li>
+                        <li><a href="#atv">Вездеходы</a></li>
+                        <li><a href="#rafting">Рафтинг</a></li>
+                        <li><a href="#jeeping">Джиппинг</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#winter">Зимние услуги</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#snowmobile">Снегоходы</a></li>
+                        <li><a href="#winter-atv">Вездеходы</a></li>
+                        <li><a href="#balloon">Воздушный шар</a></li>
+                        <li><a href="#swings">Высокогорные качели</a></li>
+                    </ul>
+                </li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#blog">Блог</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="contact-info">
+            <a href="https://wa.me/+79886153852" target="_blank">
+                <img src="images/whatsapp-icon.png" alt="WhatsApp">
+            </a>
+            <a href="https://t.me/kubanovoff" target="_blank">
+                <img src="images/telegram-icon.png" alt="Telegram">
+            </a>
+            <!-- Кнопка для звонка -->
+            <a href="tel:+79886153852" class="call-button">+7 (988) 615 38 52</a>
+            <button onclick="orderTour()">ЗАКАЗАТЬ ТУР</button>
+        </div>
+    </header>
+    <div class="hero-section">
+        <h1>Туры по долинам Архыза</h1>
+        <p>Ознакомьтесь с новыми маршрутами 2025 года на нашем сайте</p>
+        <a href="tours.html" class="tour-button">Выбрать тур</a>
+        <div class="stats-section">
+            <div class="stat-item">
+                <h2>6 лет</h2>
+                <p>оказываем туристические услуги</p>
+            </div>
+            <div class="stat-item">
+                <h2>12 человек</h2>
+                <p>в нашей команде</p>
+            </div>
+            <div class="stat-item">
+                <h2>28 единиц</h2>
+                <p>транспорта в обслуживании</p>
+            </div>
+        </div>
+    </div>
+<section class="about-us-section">
+    <div class="about-us-content">
+        <div class="about-us-text">
+            <h2>Немного о нас</h2>
+            <h3>Активный отдых в Карачаево-Черкесии</h3>
+            <p>
+                «Экстрим Архыз» предлагает туристам активный отдых в Карачаево-Черкесии: 
+                сплавы по реке Большой Зеленчук, катание по бездорожью на современных 
+                квадроциклах, пешие экскурсии и многое другое в любое время года.
+            </p>
+            <a href="#about" class="about-us-button">БОЛЬШЕ О НАС</a>
+        </div>
+        <div class="about-us-image">
+            <img src="images/about-us.jpg" alt="Активный отдых в Архызе">
+        </div>
+    </div>
+</section>
+<section class="safety-section">
+    <div class="image-container">
+        <img src="images/safety-background.jpg" alt="Безопасные маршруты">
+        <div class="squares-container">
+            <div class="square">
+                <div class="rotated-text">безопасно</div>
+                <div class="corner-text top-left">01.</div>
+                <div class="corner-text bottom-left">Проверенные и безопасные маршруты</div>
+            </div>
+            <div class="square">
+                <div class="rotated-text">комфортно</div>
+                <div class="corner-text top-left">02.</div>
+                <div class="corner-text bottom-left">Новейшая и качественная техника</div>
+            </div>
+            <div class="square">
+                <div class="rotated-text">мы опытны</div>
+                <div class="corner-text top-left">03.</div>
+                <div class="corner-text bottom-left">Надежные и опытные инструкторы</div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Блок с текстом, фотографиями и отзывами -->
+<section class="reviews-photos-section">
+    <div class="left-section">
+        <h2>Отзывы наших туристов</h2>
+        <div class="photos-container">
+            <div class="photo photo-1"><img src="images/photo1.jpg" alt="Фото 1"></div>
+            <div class="photo photo-2"><img src="images/photo2.jpg" alt="Фото 2"></div>
+            <div class="photo photo-3"><img src="images/photo3.jpg" alt="Фото 3"></div>
+            <div class="photo photo-4"><img src="images/photo4.jpg" alt="Фото 4"></div>
+        </div>
+    </div>
+    <div class="right-section">
+        <div class="reviews-container">
+            <!-- Вставьте сюда код виджета отзывов -->
+            <iframe
+                src="https://yandex.ru/maps-reviews-widget/226942681694?comments"
+                width="100%"
+                height="400"
+                frameborder="0"
+                title="Отзывы о Экстрим Архыз на Яндекс Картах">
+            </iframe>
+        </div>
+    </div>
+</section>
+    <script src="js/script.js"></script>
+</body>
+</html>
