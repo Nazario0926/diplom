@@ -1,3 +1,104 @@
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .call-button {
+        margin: 10px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 2em;
+    }
+
+    .hero-section p {
+        font-size: 1em;
+    }
+
+    .tour-button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .about-us-content {
+        flex-direction: column;
+    }
+
+    .about-us-text {
+        max-width: 100%;
+    }
+
+    .about-us-image {
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        width: 100%;
+    }
+
+    .reviews-slider {
+        flex-direction: column;
+    }
+
+    .review-card {
+        width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        margin: 10px 0;
+    }
+
+    table th, table td {
+        padding: 8px;
+    }
+
+    .tour-detail-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .quad-routes-grid, .atv-routes-grid, .rafting-routes-grid, .jeeping-routes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-content {
+        width: 95%;
+    }
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -442,20 +543,6 @@ table tr:hover {
     background-color: #0056b3;
 }
 
-@media (max-width: 768px) {
-    table th, table td {
-        padding: 10px;
-    }
-
-    .price-list-section h2 {
-        font-size: 2em;
-    }
-
-    .price-list-category h3 {
-        font-size: 1.5em;
-    }
-}
-
 .tour-detail-section {
     padding: 60px 20px;
     background-color: #f9f9f9;
@@ -529,20 +616,6 @@ table tr:hover {
 
 .tour-button:hover {
     background-color: #0056b3;
-}
-
-@media (max-width: 768px) {
-    .tour-detail-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .tour-detail-content h1 {
-        font-size: 2em;
-    }
-
-    .tour-detail-info h2 {
-        font-size: 1.5em;
-    }
 }
 
 .quad-hero-section {
