@@ -1,25 +1,28 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
 }
 
 header {
-    font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #f8f9fa;
-    border-bottom: 1px solid #ddd;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo img {
-    height: 75px;
+    height: 60px;
 }
 
 nav ul {
-    font-family: 'Roboto', sans-serif;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -27,135 +30,102 @@ nav ul {
 }
 
 nav ul li {
-    font-family: 'Roboto', sans-serif;
     margin: 0 15px;
     position: relative;
 }
 
 nav ul li a {
-    font-family: 'Roboto', sans-serif;
     text-decoration: none;
     color: #333;
-    font-weight: bold;
-    font-size: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease;
 }
 
-/* Стили для выпадающего меню */
+nav ul li a:hover {
+    color: #007BFF;
+}
+
 .dropdown-menu {
-    font-family: 'Roboto', sans-serif;
-    display: none; /* Скрываем меню по умолчанию */
+    display: none;
     position: absolute;
-    top: 100%; /* Позиционирование под родительским элементом */
+    top: 100%;
     left: 0;
-    background-color: #f8f9fa;
+    background-color: #fff;
     border: 1px solid #ddd;
     list-style: none;
-    padding: 0;
+    padding: 10px;
     margin: 0;
     min-width: 150px;
-    z-index: 1000; /* Убедимся, что меню поверх других элементов */
-    border-radius: 10px; /* Закругленные углы */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тень для красоты */
-    opacity: 0; /* Начальная прозрачность для анимации */
-    transform: translateY(-10px); /* Начальное смещение для анимации */
-    transition: opacity 0.9s ease, transform 0.9s ease; /* Плавная анимация */
+    z-index: 1000;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Показываем меню при наведении */
 .dropdown:hover .dropdown-menu {
-    font-family: 'Roboto', sans-serif;
     display: block;
-    opacity: 1; /* Полная видимость */
-    transform: translateY(0); /* Возвращаем на место */
-}
-
-/* Стили для элементов выпадающего меню */
-.dropdown-menu li {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
 }
 
 .dropdown-menu li a {
-    font-family: 'Roboto', sans-serif;
-    padding: 10px;
+    padding: 8px 12px;
     display: block;
     color: #333;
     text-decoration: none;
-    transition: background-color 0.3s ease; /* Плавная анимация для фона */
-    border-radius: 10px; /* Закругленные углы для элементов */
+    transition: background-color 0.3s ease;
 }
 
 .dropdown-menu li a:hover {
-    font-family: 'Roboto', sans-serif;
-    background-color: #ddd; /* Цвет фона при наведении */
+    background-color: #f1f1f1;
 }
 
 .contact-info {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     align-items: center;
 }
 
 .contact-info a {
-    font-family: 'Roboto', sans-serif;
-    margin: 0 10px;
+    margin: 0 3px;
 }
 
 .contact-info img {
-
-    height: 40px; /* Фиксированная высота */
-    width: auto; /* Сохраняем пропорции */
+    height: 40px;
+    width: 60px;
 }
 
 .call-button {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin-left: 20px;
     padding: 10px 20px;
-    background-color: green; /* Цвет кнопки */
+    background-color: #007BFF;
     color: white;
     text-decoration: none;
-    border-radius: 30px; /* Закругленные углы */
-    font-size: 0.8em;
-    font-weight: bold;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 500;
     transition: background-color 0.3s ease;
-    border: none;
-    cursor: pointer;
 }
 
 .call-button:hover {
-    font-family: 'Roboto', sans-serif;
-    background-color: rgb(1, 88, 1); /* Цвет кнопки при наведении */
+    background-color: #0056b3;
 }
 
 .contact-info button {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin-left: 20px;
     padding: 10px 20px;
-    background-color: green;
-    font-size: 0.8em;
-    border-radius: 30px;
+    background-color: #007BFF;
     color: white;
     border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 500;
     cursor: pointer;
-    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 .contact-info button:hover {
-    font-family: 'Roboto', sans-serif;
-    background-color: rgb(1, 88, 1);
-    border-radius: 30px;
-}
-
-section {
-    font-family: 'Roboto', sans-serif;
-    padding: 20px;
-    margin: 20px 0;
-}
-
-section h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 2em;
-    margin-bottom: 20px;
+    background-color: #0056b3;
 }
 
 .hero-section {
@@ -164,109 +134,48 @@ section h1 {
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 100vh; /* Растягиваем на всю высоту экрана */
-    background-image: url('../images/hero-background.jpg'); /* Фоновое изображение */
-    background-size: cover; /* Растягиваем изображение на всю область */
-    background-position: center; /* Центрируем изображение */
-    background-repeat: no-repeat; /* Запрещаем повторение изображения */
+    height: 100vh;
+    background-image: url('../images/hero-background.jpg');
+    background-size: cover;
+    background-position: center;
     color: white;
     padding: 20px;
-    position: relative;
-    z-index: 1;
 }
 
 .hero-section h1 {
     font-size: 3.5em;
     margin: 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-weight: bold;
-    text-transform: uppercase;
+    font-weight: 700;
 }
 
 .hero-section p {
     font-size: 1.2em;
     margin: 10px 0 20px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-    font-style: italic;
 }
 
 .tour-button {
     padding: 15px 30px;
     font-size: 1.2em;
-    background-color: green;
+    background-color: #007BFF;
     border-radius: 30px;
     color: white;
     text-decoration: none;
     transition: background-color 0.3s ease;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-bottom: 40px; /* Увеличиваем отступ снизу */
+    font-weight: 500;
 }
 
 .tour-button:hover {
-    font-family: 'Roboto', sans-serif;
-    background-color: rgb(1, 88, 1);
-    border-radius: 30px;
+    background-color: #0056b3;
 }
 
-.stats-section {
-    display: flex;
-    justify-content: space-around;
-    background-color: rgba(0, 0, 0, 0.575); /* Полупрозрачный черный фон */
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 70px; /* Увеличиваем отступ сверху */
-    width: 80%;
-    max-width: 900px;
-}
-
-.stat-item {
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    color: white;
-}
-
-.stat-item h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 2.5em;
-    margin: 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-weight: bold;
-}
-
-.stat-item p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2em;
-    margin: 5px 0 0;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-    font-style: italic;
-}
-
-/* Стили для блока "Немного о нас" */
 .about-us-section {
-    font-family: 'Roboto', sans-serif;
-    background-color: #ffffff; /* Белый фон */
     padding: 60px 20px;
-    text-align: center;
-    border-top: 1px solid #e0e0e0; /* Светлая граница сверху */
+    background-color: #fff;
 }
 
 .about-us-content {
-    font-family: 'Roboto', sans-serif;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-/* Стили для блока "Немного о нас" */
-.about-us-section {
-    font-family: 'Roboto', sans-serif;
-    background-color: #ffffff; /* Белый фон */
-    padding: 60px 20px;
-    border-top: 1px solid #e0e0e0; /* Светлая граница сверху */
-}
-
-.about-us-content {
-    font-family: 'Roboto', sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -275,219 +184,1101 @@ section h1 {
 }
 
 .about-us-text {
-    font-family: 'Roboto', sans-serif;
     flex: 1;
     max-width: 60%;
-    text-align: left; /* Текст выравниваем по левому краю */
+    text-align: left;
 }
 
 .about-us-image {
     flex: 1;
     max-width: 35%;
-    margin-left: 40px; /* Отступ между текстом и изображением */
-}
-
-.about-us-image {
-    flex: 1;
-    max-width: 45%; /* Увеличиваем максимальную ширину изображения */
-    margin-left: 40px; /* Отступ между текстом и изображением */
+    margin-left: 40px;
 }
 
 .about-us-image img {
     width: 100%;
     height: auto;
-    border-radius: 10px; /* Закругленные углы у изображения */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Тень */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.about-us-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
 }
 
 .about-us-section h3 {
-    font-family: 'Roboto', sans-serif;
     font-size: 1.8em;
     margin-bottom: 25px;
-    color: #555; /* Серый цвет */
-    font-weight: normal;
+    color: #555;
 }
 
 .about-us-section p {
-    font-family: 'Roboto', sans-serif;
     font-size: 1.1em;
     line-height: 1.8;
-    color: #666; /* Серый цвет */
+    color: #666;
     margin-bottom: 40px;
 }
 
 .about-us-button {
-    font-family: 'Roboto', sans-serif;
     padding: 15px 40px;
     font-size: 1.1em;
-    background-color: green; 
-    border-radius: 30px;
+    background-color: #007BFF;
     color: white;
     text-decoration: none;
-    border-radius: 30px; /* Закругленные углы */
+    border-radius: 30px;
     transition: background-color 0.3s ease;
-    text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .about-us-button:hover {
-    font-family: 'Roboto', sans-serif;
-    background-color: rgb(1, 88, 1); /* Темнее оранжевый при наведении */
-    border-color: rgb(1, 88, 1);
-    border-radius: 30px;
+    background-color: #0056b3;
 }
 
-/* Стили для блока с изображением и квадратами */
-.safety-section {
-    font-family: 'Roboto', sans-serif;
-    position: relative;
-    width: 100%;
-    margin: 40px 0;
+.services-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
 }
 
-.image-container {
-    position: relative;
-    width: 100%;
-    height: auto;
+.services-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
 }
 
-.image-container img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Контейнер для квадратов */
-.squares-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.services-grid {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Расстояние между квадратами */
+    gap: 20px;
+    flex-wrap: wrap; /* Перенос карточек на новую строку, если не хватает места */
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* Стили для квадратов */
-.square {
-    font-family: 'Roboto', sans-serif;
-    width: 300px; /* Размер квадрата */
-    height: 200px; /* Размер квадрата */
-    background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый фон */
-    border-radius: 10px; /* Закругленные углы */
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; /* Выравниваем содержимое по левому краю */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень */
-    position: relative;
-    padding-left: 20px; /* Отступ слева для текста */
+.service-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 400px; /* Фиксированная ширина карточки */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+    text-decoration: none;
+    color: inherit;
 }
 
-/* Стили для перевернутого текста */
-.rotated-text {
-    transform: rotate(-90deg); /* Поворот текста на 90 градусов */
-    font-size: 1.25em;
-    font-weight: bold;
-    color: #999b9e9a; /* Синий цвет текста */
-    position: absolute;
-    left: 10px; /* Позиционируем текст у левой стенки */
-    top: 160px; /* Центрируем по вертикали */
-    transform-origin: left top; /* Точка вращения */
-    white-space: nowrap; /* Запрещаем перенос текста */
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Стили для текста в углах */
-.corner-text {
-    position: absolute;
+.service-icon img {
+    width: 100%;
+    height: 250px; /* Фиксированная высота для иконки */
+    object-fit: cover; /* Сохраняем пропорции изображения */
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.service-card p {
     font-size: 1em;
-    color: black; /* Темно-серый цвет текста */
+    color: #666;
+    margin: 0; /* Убираем отступы у текста */
 }
 
-.corner-text.top-left {
-    top: 30px;
-    left: 45px;
+.reviews-section {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
 }
 
-.corner-text.bottom-left {
-    bottom: 20px;
-    left: 45px;
-    font-size: 1.2em;
-    color: black; /* Серый цвет текста */
+.reviews-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
 }
 
-/* Стили для блока с текстом, фотографиями и отзывами */
-.reviews-photos-section {
+.reviews-slider {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.review-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-card p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.review-card span {
+    font-size: 0.9em;
+    color: #999;
+}
+
+footer {
+    background-color: #007BFF;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    padding: 40px 20px;
-    background-color: #ffffff; /* Белый фон */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.left-section {
-    width: 45%; /* Ширина левой части */
+.footer-logo img {
+    height: 50px;
 }
 
-.left-section h2 {
-    font-size: 2em;
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #007BFF;
+}
+
+.footer-social img {
+    height: 30px;
+    width: auto;
+    margin: 0 10px;
+}
+
+.price-list-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.price-list-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.price-list-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.price-list-category {
+    margin-bottom: 40px;
+}
+
+.price-list-category h3 {
+    font-size: 1.8em;
     margin-bottom: 20px;
-    color: #333; /* Темно-серый цвет */
+    color: #333;
+    text-align: left;
 }
 
-.photos-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Две колонки */
-    gap: 20px; /* Расстояние между фотографиями */
-    position: relative;
-}
-
-.photo {
-    position: relative;
-    border-radius: 10px; /* Закругленные углы */
-    overflow: hidden; /* Скрываем выходящие за пределы элементы */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень */
-    aspect-ratio: 1 / 1; /* Сохраняем квадратную форму */
-}
-
-.photo img {
+table {
     width: 100%;
-    height: 100%; /* Занимаем всю высоту контейнера */
-    object-fit: cover; /* Обрезаем изображение, чтобы оно заполнило контейнер */
-    display: block;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-/* Шахматный порядок и наложение углов */
-.photo-1 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    transform: rotate(-2deg); /* Наклон */
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
 }
 
-.photo-2 {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    transform: rotate(2deg); /* Наклон */
+table th {
+    background-color: #007BFF;
+    color: white;
+    font-weight: 500;
 }
 
-.photo-3 {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    transform: rotate(2deg); /* Наклон */
+table tr:hover {
+    background-color: #f1f1f1;
 }
 
-.photo-4 {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    transform: rotate(-2deg); /* Наклон */
+.tour-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 0.9em;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
 }
 
-.right-section {
-    width: 50%; /* Ширина правой части */
+.tour-button:hover {
+    background-color: #0056b3;
 }
 
-.reviews-container {
-    background-color: #f8f9fa; /* Светлый фон */
-    border-radius: 10px; /* Закругленные углы */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тень */
+@media (max-width: 768px) {
+    table th, table td {
+        padding: 10px;
+    }
+
+    .price-list-section h2 {
+        font-size: 2em;
+    }
+
+    .price-list-category h3 {
+        font-size: 1.5em;
+    }
+}
+
+.tour-detail-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.tour-detail-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tour-detail-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+    text-align: center;
+}
+
+.tour-detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.tour-detail-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tour-detail-info h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.tour-detail-info p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.tour-detail-info ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.tour-detail-info ul li {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.tour-detail-info ul li strong {
+    color: #333;
+}
+
+.tour-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.tour-button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .tour-detail-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tour-detail-content h1 {
+        font-size: 2em;
+    }
+
+    .tour-detail-info h2 {
+        font-size: 1.5em;
+    }
+}
+
+.quad-hero-section {
+    background-image: url('../images/quad-hero.jpg');
+    background-size: cover;
+    background-position: center -350px;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
     padding: 20px;
+}
+
+.quad-hero-section h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.quad-hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.quad-description-section {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.quad-description-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.quad-description-text {
+    flex: 1;
+    max-width: 60%;
+}
+
+.quad-description-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.quad-description-text p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.quad-description-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quad-description-text ul li {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.quad-description-image {
+    flex: 1;
+    max-width: 35%;
+}
+
+.quad-description-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.quad-routes-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.quad-routes-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.quad-routes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.quad-route-card {
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block; /* Делаем карточку блочным элементом */
+}
+
+.quad-route-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer; /* Меняем курсор при наведении */
+}
+
+.quad-route-card:hover .book-button {
+    opacity: 1;
+}
+
+.quad-route-card img {
+    width: 100%;
+    height: 100%; /* Увеличиваем высоту фотографий */
+    object-fit: cover; /* Сохраняем пропорции и обрезаем изображение */
+    border-radius: 10px 10px 0 0; /* Закругляем только верхние углы */
+}
+
+.quad-route-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.quad-route-card p {
+    font-size: 1em;
+    color: #666;
+}
+
+.book-button {
+    font-family: 'Montserrat', sans-serif;
+    opacity: 0;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.book-button:hover {
+    background-color: #0056b3;
+}
+
+/* Стили для всплывающего окна */
+/* Стили для модального окна */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Черный полупрозрачный фон */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-in-out; /* Анимация появления */
+}
+
+.modal-content {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    background-color: #1a1a1a; /* Темный фон для контента */
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    color: white; /* Белый текст */
+    animation: slideIn 0.3s ease-in-out; /* Анимация появления */
+}
+
+/* Анимация появления фона */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Анимация появления контента */
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Стили для кнопки закрытия */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: white; /* Белый цвет для крестика */
+}
+
+.close:hover {
+    color: #007BFF; /* Изменение цвета при наведении */
+}
+
+/* Стили для формы */
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.modal-content input, .modal-content textarea {
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #333; /* Темный фон для полей ввода */
+    color: white; /* Белый текст */
+}
+
+.modal-content input::placeholder, .modal-content textarea::placeholder {
+    color: #aaa; /* Серый цвет для плейсхолдеров */
+}
+
+.modal-content button {
+    padding: 15px 30px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modal-content button:hover {
+    background-color: #0056b3;
+}
+
+.atv-hero-section {
+    background-image: url('../images/atv-hero.jpg');
+    background-size: cover;
+    background-position: center -550px;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.atv-hero-section h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.atv-hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.atv-description-section {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.atv-description-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.atv-description-text {
+    flex: 1;
+    max-width: 60%;
+}
+
+.atv-description-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.atv-description-text p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.atv-description-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.atv-description-text ul li {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.atv-description-image {
+    flex: 1;
+    max-width: 35%;
+}
+
+.atv-description-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.atv-routes-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.atv-routes-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.atv-routes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.atv-route-card {
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block; /* Делаем карточку блочным элементом */
+}
+
+.atv-route-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer; /* Меняем курсор при наведении */
+}
+
+.atv-route-card:hover .book-button {
+    opacity: 1;
+}
+
+.atv-route-card img {
+    width: 100%;
+    height: 100%; /* Увеличиваем высоту фотографий */
+    object-fit: cover; /* Сохраняем пропорции и обрезаем изображение */
+    border-radius: 10px 10px 0 0; /* Закругляем только верхние углы */
+}
+
+.atv-route-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.atv-route-card p {
+    font-size: 1em;
+    color: #666;
+}
+
+.atv-order-form button:hover {
+    background-color: #0056b3;
+}
+
+.rafting-hero-section {
+    background-image: url('../images/rafting-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.rafting-hero-section h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.rafting-hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.rafting-description-section {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.rafting-description-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.rafting-description-text {
+    flex: 1;
+    max-width: 60%;
+}
+
+.rafting-description-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.rafting-description-text p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.rafting-description-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.rafting-description-text ul li {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.rafting-description-image {
+    flex: 1;
+    max-width: 35%;
+}
+
+.rafting-description-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.rafting-routes-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.rafting-routes-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.rafting-routes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.rafting-route-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.rafting-route-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.rafting-route-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.rafting-route-card p {
+    font-size: 1em;
+    color: #666;
+}
+
+.rafting-order-section {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.rafting-order-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.rafting-order-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.rafting-order-form input, .rafting-order-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.rafting-order-form button {
+    padding: 15px 30px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.rafting-order-form button:hover {
+    background-color: #0056b3;
+}
+
+.jeeping-hero-section {
+    background-image: url('../images/jeeping-hero.jpg'); 
+    background-size: cover;
+    background-position: center -500px;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.jeeping-hero-section h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.jeeping-hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.jeeping-description-section {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.jeeping-description-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.jeeping-description-text {
+    flex: 1;
+    max-width: 60%;
+}
+
+.jeeping-description-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.jeeping-description-text p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.jeeping-description-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.jeeping-description-text ul li {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.jeeping-description-image {
+    flex: 1;
+    max-width: 35%;
+}
+
+.jeeping-description-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.jeeping-routes-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.jeeping-routes-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.jeeping-routes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.jeeping-route-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.jeeping-route-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.jeeping-route-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.jeeping-route-card p {
+    font-size: 1em;
+    color: #666;
+}
+
+.jeeping-order-section {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.jeeping-order-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.jeeping-order-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.jeeping-order-form input, .jeeping-order-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.jeeping-order-form button {
+    padding: 15px 30px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.jeeping-order-form button:hover {
+    background-color: #0056b3;
 }
