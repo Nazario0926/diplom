@@ -38,3 +38,20 @@ window.addEventListener('keydown', function (e) {
         closeModal();
     }
 });
+
+let lastScrollTop = 0; // Переменная для хранения последней позиции прокрутки
+const header = document.querySelector('header'); // Находим header
+
+window.addEventListener('scroll', function () {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop; // Текущая позиция прокрутки
+
+    if (scrollTop > lastScrollTop) {
+        // Прокрутка вниз — скрываем header
+        header.classList.add('hidden');
+    } else {
+        // Прокрутка вверх — показываем header
+        header.classList.remove('hidden');
+    }
+
+    lastScrollTop = scrollTop; // Обновляем последнюю позицию прокрутки
+});

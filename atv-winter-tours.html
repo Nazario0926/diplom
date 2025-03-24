@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Летние услуги - Экстрим Архыз</title>
+    <title>Вездеходы в Архызе - Экстрим Архыз</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
@@ -28,7 +28,7 @@
                 <li class="dropdown">
                     <a href="winter.html">Зимние услуги</a>
                     <ul class="dropdown-menu">
-                        <li><a href="atv-tours.html">Вездеходы</a></li>
+                        <li><a href="atv-winter-tours.html">Вездеходы</a></li>
                         <li><a href="snowmobile-tours.html">Снегоходы</a></li>
                         <li><a href="balloon-tours.html">Воздушный шар</a></li>
                     </ul>
@@ -49,43 +49,67 @@
         </div>
     </header>
 
-    <section class="services-section">
-        <h2>Летние услуги</h2>
-        <div class="services-grid">
-            <!-- Карточка "Квадроциклы" -->
-            <a href="quad-tours.html" class="service-card">
-                <div class="service-icon">
-                    <img src="images/quad-icon.jpg" alt="Квадроциклы">
-                </div>
-                <h3>Квадроциклы</h3>
-                <p>Покоряйте бездорожье на современных квадроциклах.</p>
-            </a>
-            <!-- Карточка "Вездеходы" -->
-            <a href="atv-tours.html" class="service-card">
-                <div class="service-icon">
-                    <img src="images/atv-icon.jpg" alt="Вездеходы">
-                </div>
-                <h3>Вездеходы</h3>
-                <p>Исследуйте труднодоступные места на мощных вездеходах.</p>
-            </a>
-            <!-- Карточка "Рафтинг" -->
-            <a href="rafting-tours.html" class="service-card">
-                <div class="service-icon">
-                    <img src="images/rafting-icon.jpg" alt="Рафтинг">
-                </div>
-                <h3>Рафтинг</h3>
-                <p>Сплавы по реке Большой Зеленчук для любителей экстрима.</p>
-            </a>
-            <!-- Карточка "Джиппинг" -->
-            <a href="jeeping-tours.html" class="service-card">
-                <div class="service-icon">
-                    <img src="images/jeeping-icon.jpg" alt="Джиппинг">
-                </div>
-                <h3>Джиппинг</h3>
-                <p>Экстремальные поездки на джипах по горным тропам.</p>
-            </a>
+    <section class="atv-winter-hero-section">
+        <h1>Вездеходы в Архызе</h1>
+        <p>Исследуйте труднодоступные места на мощных вездеходах.</p>
+    </section>
+
+    <section class="atv-winter-description-section">
+        <div class="atv-winter-description-content">
+            <div class="quad-description-text">
+                <h2>Вездеходы в Архызе</h2>
+                <p>
+                    Вездеходы — это идеальный способ добраться до самых отдалённых и живописных заснеженных мест Архыза. 
+                    Наши маршруты подходят как для новичков, так и для опытных водителей. Вы сможете насладиться 
+                    захватывающими видами и адреналином от езды по заснеженному бездорожью.
+                </p>
+                <h3>Преимущества:</h3>
+                <ul>
+                    <li>Мощные вездеходы с полным приводом.</li>
+                    <li>Профессиональные инструкторы и безопасность.</li>
+                    <li>Маршруты разной сложности.</li>
+                    <li>Фото- и видеосъемка на память.</li>
+                </ul>
+            </div>
+            <div class="atv-winter-description-image">
+                <img src="images/atv-winter-tour.jpg" alt="Вездеходы в Архызе">
+            </div>
         </div>
     </section>
+
+    <section class="atv-winter-routes-section">
+        <h2>Наши маршруты</h2>
+        <div class="atv-winter-routes-grid">
+            <div class="atv-winter-route-card">
+                <img src="images/atv-winter-route1.jpg" alt="Маршрут 1">
+                <button class="book-button" onclick='openOrderModal("Маршрут \"Белый водопад\"")'>Забронировать</button>
+            </div>
+            <div class="atv-winter-route-card">
+                <img src="images/atv-winter-route2.jpg" alt="Маршрут 2">
+                <button class="book-button" onclick='openOrderModal("Маршрут \"Софийские водопады\"")'>Забронировать</button>
+            </div>
+            <div class="atv-winter-route-card">
+                <img src="images/atv-winter-route3.jpg" alt="Маршрут 3">
+                <button class="book-button" onclick='openOrderModal("Маршрут \"Малый маршрут\"")'>Забронировать</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Ваш заказ</h2>
+            <p id="selectedRoute"></p>
+            <form id="orderForm">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="tel" placeholder="Ваш телефон" required>
+                <input type="email" placeholder="Ваш email">
+                <textarea placeholder="Ваши пожелания"></textarea>
+                <button type="submit">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+    
     <section class="yandex-reviews-section">
         <h2>Отзывы наших клиентов</h2>
         <div class="yandex-reviews-widget">
@@ -99,6 +123,7 @@
             </iframe>
         </div>
     </section>
+
     <footer>
         <div class="footer-content">
             <div class="footer-logo">

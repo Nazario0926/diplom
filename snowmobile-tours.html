@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Летние услуги - Экстрим Архыз</title>
+    <title>Снегоходы в Архызе - Экстрим Архыз</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/Arkhyz.png">
 </head>
-<link rel="icon" type="image/x-icon" href="/images/Arkhyz.png">
 <body>
     <header>
         <div class="logo">
@@ -28,7 +28,7 @@
                 <li class="dropdown">
                     <a href="winter.html">Зимние услуги</a>
                     <ul class="dropdown-menu">
-                        <li><a href="atv-tours.html">Вездеходы</a></li>
+                        <li><a href="atv-winter-tours.html">Вездеходы</a></li>
                         <li><a href="snowmobile-tours.html">Снегоходы</a></li>
                         <li><a href="balloon-tours.html">Воздушный шар</a></li>
                     </ul>
@@ -48,44 +48,58 @@
             <button type="button" onclick="orderTour()">ЗАКАЗАТЬ ТУР</button>
         </div>
     </header>
-
-    <section class="services-section">
-        <h2>Летние услуги</h2>
-        <div class="services-grid">
-            <!-- Карточка "Квадроциклы" -->
-            <a href="quad-tours.html" class="service-card">
-                <div class="service-icon">
-                    <img src="images/quad-icon.jpg" alt="Квадроциклы">
-                </div>
-                <h3>Квадроциклы</h3>
-                <p>Покоряйте бездорожье на современных квадроциклах.</p>
-            </a>
-            <!-- Карточка "Вездеходы" -->
-            <a href="atv-tours.html" class="service-card">
-                <div class="service-icon">
-                    <img src="images/atv-icon.jpg" alt="Вездеходы">
-                </div>
-                <h3>Вездеходы</h3>
-                <p>Исследуйте труднодоступные места на мощных вездеходах.</p>
-            </a>
-            <!-- Карточка "Рафтинг" -->
-            <a href="rafting-tours.html" class="service-card">
-                <div class="service-icon">
-                    <img src="images/rafting-icon.jpg" alt="Рафтинг">
-                </div>
-                <h3>Рафтинг</h3>
-                <p>Сплавы по реке Большой Зеленчук для любителей экстрима.</p>
-            </a>
-            <!-- Карточка "Джиппинг" -->
-            <a href="jeeping-tours.html" class="service-card">
-                <div class="service-icon">
-                    <img src="images/jeeping-icon.jpg" alt="Джиппинг">
-                </div>
-                <h3>Джиппинг</h3>
-                <p>Экстремальные поездки на джипах по горным тропам.</p>
-            </a>
+    <section class="snowmobile-hero-section">
+        <h1>Снегоходы в Архызе</h1>
+        <p>Покоряйте снежные просторы на мощных снегоходах.</p>
+    </section>
+    <section class="snowmobile-description-section">
+        <div class="snowmobile-description-content">
+            <div class="snowmobile-description-text">
+                <h2>Снегоходы в Архызе</h2>
+                <p>
+                    Снегоходы — это идеальный способ исследовать заснеженные просторы Архыза. 
+                    Наши маршруты подходят как для новичков, так и для опытных водителей. Вы сможете насладиться 
+                    захватывающими видами и адреналином от езды по снежному бездорожью.
+                </p>
+                <h3>Преимущества:</h3>
+                <ul>
+                    <li>Мощные снегоходы с высокой проходимостью.</li>
+                    <li>Профессиональные инструкторы и безопасность.</li>
+                    <li>Маршруты разной сложности.</li>
+                    <li>Фото- и видеосъемка на память.</li>
+                </ul>
+            </div>
+            <div class="snowmobile-description-image">
+                <img src="images/snowmobile-tour.jpg" alt="Снегоходы в Архызе">
+            </div>
         </div>
     </section>
+    <section class="snowmobile-routes-section">
+        <h2>Наши маршруты</h2>
+        <div class="snowmobile-routes-grid">
+            <div class="snowmobile-route-card">
+                <img src="images/snowmobile-route1.jpg" alt="Маршрут 1">
+                <button class="book-button" onclick='openOrderModal("Маршрут \"Снежные вершины\"")'>Забронировать</button>
+            </div>
+            <div class="snowmobile-route-card">
+                <img src="images/snowmobile-route2.jpg" alt="Маршрут 2">
+                <button class="book-button" onclick='openOrderModal("Маршрут \"Ледяные озера\"")'>Забронировать</button>
+            </div>
+    </section>
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Ваш заказ</h2>
+            <p id="selectedRoute"></p>
+            <form id="orderForm">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="tel" placeholder="Ваш телефон" required>
+                <input type="email" placeholder="Ваш email">
+                <textarea placeholder="Ваши пожелания"></textarea>
+                <button type="submit">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
     <section class="yandex-reviews-section">
         <h2>Отзывы наших клиентов</h2>
         <div class="yandex-reviews-widget">
