@@ -1,13 +1,11 @@
 html {
     scroll-behavior: smooth;
 }
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -15,7 +13,6 @@ body {
     color: #333;
     background-color: #f9f9f9;
 }
-
 header {
     display: flex;
     justify-content: space-between;
@@ -27,7 +24,6 @@ header {
     top: 0;
     z-index: 1000;
 }
-
 .hero-section::before {
     content: '';
     position: absolute;
@@ -38,19 +34,17 @@ header {
     background: rgba(0, 0, 0, 0.3);
     z-index: 0;
 }
-
 .hero-section h1,
 .hero-section p {
     position: relative;
     z-index: 1;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 } 
-
 .hero-section {
     position: relative;
     overflow: hidden;
     height: 100vh;
-    background-image: url('../images/hero-background.jpg');
+    background-image: url('../images/hero-background.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed; 
@@ -62,23 +56,19 @@ header {
     color: white;
     padding: 20px;
 }
-
 .logo img {
     height: 60px;
 }
-
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
-
 nav ul li {
     margin: 0 15px;
     position: relative;
 }
-
 nav ul li a {
     text-decoration: none;
     color: #333;
@@ -86,11 +76,9 @@ nav ul li a {
     font-size: 16px;
     transition: color 0.3s ease;
 }
-
 nav ul li a:hover {
     color: #007BFF;
 }
-
 .dropdown-menu {
     display: none;
     position: absolute;
@@ -106,11 +94,9 @@ nav ul li a:hover {
     border-radius: 5px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
 .dropdown:hover .dropdown-menu {
     display: block;
 }
-
 .dropdown-menu li a {
     padding: 8px 12px;
     display: block;
@@ -118,7 +104,6 @@ nav ul li a:hover {
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
-
 .dropdown-menu li a:hover {
     background-color: #f1f1f1;
 }
@@ -128,16 +113,13 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
 }
-
 .contact-info a {
     margin: 0 3px;
 }
-
 .contact-info img {
     height: 40px;
     width: 60px;
 }
-
 .call-button {
     font-family: 'Montserrat', sans-serif;
     margin-left: 20px;
@@ -150,29 +132,9 @@ nav ul li a:hover {
     font-weight: 500;
     transition: background-color 0.3s ease;
 }
-
 .call-button:hover {
     background-color: #0056b3;
 }
-
-.contact-info button {
-    font-family: 'Montserrat', sans-serif;
-    margin-left: 20px;
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 25px;
-    font-size: 14px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.contact-info button:hover {
-    background-color: #0056b3;
-}
-
 .hero-section {
     display: flex;
     flex-direction: column;
@@ -180,26 +142,23 @@ nav ul li a:hover {
     justify-content: center;
     text-align: center;
     height: 100vh;
-    background-image: url('../images/hero-background.jpg');
+    background-image: url('../images/hero-background.webp');
     background-size: cover;
     background-position: center;
     color: white;
     padding: 20px;
 }
-
 .hero-section h1 {
     font-size: 3.5em;
     margin: 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-weight: 700;
 }
-
 .hero-section p {
     font-size: 1.2em;
     margin: 10px 0 20px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
-
 .tour-button {
     padding: 15px 30px;
     font-size: 1.2em;
@@ -210,16 +169,13 @@ nav ul li a:hover {
     transition: background-color 0.3s ease;
     font-weight: 500;
 }
-
 .tour-button:hover {
     background-color: #0056b3;
 }
-
 .about-us-section {
     padding: 60px 20px;
     background-color: #fff;
 }
-
 .about-us-content {
     display: flex;
     align-items: center;
@@ -227,45 +183,38 @@ nav ul li a:hover {
     max-width: 1200px;
     margin: 0 auto;
 }
-
 .about-us-text {
     flex: 1;
     max-width: 60%;
     text-align: left;
 }
-
 .about-us-image {
     flex: 1;
     max-width: 35%;
     margin-left: 40px;
 }
-
 .about-us-image img {
     width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
-
 .about-us-section h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
     color: #333;
 }
-
 .about-us-section h3 {
     font-size: 1.8em;
     margin-bottom: 25px;
     color: #555;
 }
-
 .about-us-section p {
     font-size: 1.1em;
     line-height: 1.8;
     color: #666;
     margin-bottom: 40px;
 }
-
 .about-us-button {
     padding: 15px 40px;
     font-size: 1.1em;
@@ -276,39 +225,34 @@ nav ul li a:hover {
     transition: background-color 0.3s ease;
     font-weight: 500;
 }
-
 .about-us-button:hover {
     background-color: #0056b3;
 }
-
 .services-section {
     padding: 60px 20px;
     background-color: #f9f9f9;
     text-align: center;
 }
-
 .services-section h2 {
     font-size: 2.5em;
     margin-bottom: 40px;
     color: #333;
 }
-
 .services-grid {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap; /* Перенос карточек на новую строку, если не хватает места */
+    flex-wrap: wrap; 
     max-width: 1200px;
     margin: 0 auto;
 }
-
 .service-card {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    width: 400px; /* Фиксированная ширина карточки */
+    width: 400px; 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: block;
     text-decoration: none;
@@ -322,8 +266,8 @@ nav ul li a:hover {
 
 .service-icon img {
     width: 100%;
-    height: 250px; /* Фиксированная высота для иконки */
-    object-fit: cover; /* Сохраняем пропорции изображения */
+    height: 250px;
+    object-fit: cover;
     border-radius: 10px;
     margin-bottom: 15px;
 }
@@ -337,7 +281,7 @@ nav ul li a:hover {
 .service-card p {
     font-size: 1em;
     color: #666;
-    margin: 0; /* Убираем отступы у текста */
+    margin: 0; 
 }
 
 .reviews-section {
@@ -563,7 +507,7 @@ table tr:hover {
 }
 
 .quad-hero-section {
-    background-image: url('../images/quad-hero.jpg');
+    background-image: url('../images/quad-hero.webp');
     background-size: cover;
     background-position: center -350px;
     height: 60vh;
@@ -669,37 +613,31 @@ table tr:hover {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: block; /* Делаем карточку блочным элементом */
+    display: block; 
 }
-
 .quad-route-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    cursor: pointer; /* Меняем курсор при наведении */
+    cursor: pointer;
 }
-
 .quad-route-card:hover .book-button {
     opacity: 1;
 }
-
 .quad-route-card img {
     width: 100%;
-    height: 100%; /* Увеличиваем высоту фотографий */
-    object-fit: cover; /* Сохраняем пропорции и обрезаем изображение */
-    border-radius: 10px 10px 0 0; /* Закругляем только верхние углы */
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 10px 10px 0 0; 
 }
-
 .quad-route-card h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
     color: #333;
 }
-
 .quad-route-card p {
     font-size: 1em;
     color: #666;
 }
-
 .book-button {
     font-family: 'Montserrat', sans-serif;
     opacity: 0;
@@ -714,15 +652,13 @@ table tr:hover {
     border-radius: 25px;
     font-size: 1em;
     cursor: pointer;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
 }
 
 .book-button:hover {
     background-color: #0056b3;
+    opacity: 1;
 }
-
-/* Стили для всплывающего окна */
-/* Стили для модального окна */
 .modal {
     display: none;
     position: fixed;
@@ -730,26 +666,24 @@ table tr:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Черный полупрозрачный фон */
+    background-color: rgba(0, 0, 0, 0.8);
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    animation: fadeIn 0.3s ease-in-out; /* Анимация появления */
+    animation: fadeIn 0.3s ease-in-out; 
 }
-
 .modal-content {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    background-color: #1a1a1a; /* Темный фон для контента */
+    background-color: #1a1a1a;
     padding: 20px;
     border-radius: 10px;
     width: 90%;
     max-width: 500px;
     position: relative;
-    color: white; /* Белый текст */
-    animation: slideIn 0.3s ease-in-out; /* Анимация появления */
+    color: white;
+    animation: slideIn 0.3s ease-in-out; 
 }
 
-/* Анимация появления фона */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -758,8 +692,6 @@ table tr:hover {
         opacity: 1;
     }
 }
-
-/* Анимация появления контента */
 @keyframes slideIn {
     from {
         transform: translateY(-50px);
@@ -795,12 +727,12 @@ table tr:hover {
     border: 1px solid #333;
     border-radius: 5px;
     font-size: 1em;
-    background-color: #333; /* Темный фон для полей ввода */
-    color: white; /* Белый текст */
+    background-color: #333; 
+    color: white; 
 }
 
 .modal-content input::placeholder, .modal-content textarea::placeholder {
-    color: #aaa; /* Серый цвет для плейсхолдеров */
+    color: #aaa; 
 }
 
 .modal-content button {
@@ -819,7 +751,7 @@ table tr:hover {
 }
 
 .atv-winter-hero-section {
-    background-image: url('../images/atv-winter-hero.jpg');
+    background-image: url('../images/atv-winter-hero.webp');
     background-size: cover;
     background-position: center -550px;
     height: 60vh;
@@ -925,13 +857,13 @@ table tr:hover {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: block; /* Делаем карточку блочным элементом */
+    display: block; 
 }
 
 .atv-winter-route-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    cursor: pointer; /* Меняем курсор при наведении */
+    cursor: pointer;
 }
 
 .atv-winter-route-card:hover .book-button {
@@ -940,9 +872,9 @@ table tr:hover {
 
 .atv-winter-route-card img {
     width: 100%;
-    height: 100%; /* Увеличиваем высоту фотографий */
-    object-fit: cover; /* Сохраняем пропорции и обрезаем изображение */
-    border-radius: 10px 10px 0 0; /* Закругляем только верхние углы */
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 10px 10px 0 0; 
 }
 
 .atv-winter-route-card h3 {
@@ -957,7 +889,7 @@ table tr:hover {
 }
 
 .atv-hero-section {
-    background-image: url('../images/atv-hero.jpg');
+    background-image: url('../images/atv-hero.webp');
     background-size: cover;
     background-position: center -550px;
     height: 60vh;
@@ -1063,13 +995,13 @@ table tr:hover {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: block; /* Делаем карточку блочным элементом */
+    display: block;
 }
 
 .atv-route-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    cursor: pointer; /* Меняем курсор при наведении */
+    cursor: pointer; 
 }
 
 .atv-route-card:hover .book-button {
@@ -1078,9 +1010,9 @@ table tr:hover {
 
 .atv-route-card img {
     width: 100%;
-    height: 100%; /* Увеличиваем высоту фотографий */
-    object-fit: cover; /* Сохраняем пропорции и обрезаем изображение */
-    border-radius: 10px 10px 0 0; /* Закругляем только верхние углы */
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 10px 10px 0 0; 
 }
 
 .atv-route-card h3 {
@@ -1115,7 +1047,6 @@ table tr:hover {
     margin-bottom: 30px;
 }
 
-/* Стили для секции с описанием джиппинга */
 .rafting-description-section {
     padding: 60px 20px;
     background-color: #fff;
@@ -1189,9 +1120,8 @@ table tr:hover {
     transform: scale(1.05);
 }
 
-/* Стили для секции с маршрутами джиппинга */
 .rafting-hero-section {
-    background-image: url('../images/rafting-hero.jpg');
+    background-image: url('../images/rafting-hero.webp');
     background-size: cover;
     background-position: center -350px;
     height: 60vh;
@@ -1205,15 +1135,15 @@ table tr:hover {
     position: relative;
 }
 
-/* Секция с маршрутами джиппинга - центрирование на всем экране */
+
 .rafting-routes-section {
     padding: 60px 20px;
     background-color: #f9f9f9;
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh; /* Занимает всю высоту экрана */
-    justify-content: center; /* Вертикальное центрирование */
+    min-height: 100vh; 
+    justify-content: center;
 }
 
 .rafting-routes-section h2 {
@@ -1235,7 +1165,7 @@ table tr:hover {
 .rafting-routes-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Горизонтальное центрирование карточек */
+    justify-content: center; 
     gap: 30px;
     width: 100%;
 }
@@ -1257,19 +1187,15 @@ table tr:hover {
 
 .rafting-route-card img {
     width: 100%;
-    height: 100%; /* Фиксированная высота изображения */
+    height: 100%; 
     object-fit: cover;
     display: block;
 }
 
-/* Контент внутри карточки */
 .rafting-route-content {
     padding: 20px;
     text-align: center;
 }
-
-
-
 
 .snowmobile-hero-section h1,
 .snowmobile-hero-section p {
@@ -1288,7 +1214,6 @@ table tr:hover {
     margin-bottom: 30px;
 }
 
-/* Стили для секции с описанием джиппинга */
 .snowmobile-description-section {
     padding: 60px 20px;
     background-color: #fff;
@@ -1362,9 +1287,8 @@ table tr:hover {
     transform: scale(1.05);
 }
 
-/* Стили для секции с маршрутами джиппинга */
 .snowmobile-hero-section {
-    background-image: url('../images/snowmobile-hero.jpg');
+    background-image: url('../images/snowmobile-hero.webp');
     background-size: cover;
     background-position: center -350px;
     height: 60vh;
@@ -1378,15 +1302,14 @@ table tr:hover {
     position: relative;
 }
 
-/* Секция с маршрутами джиппинга - центрирование на всем экране */
 .snowmobile-routes-section {
     padding: 60px 20px;
     background-color: #f9f9f9;
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh; /* Занимает всю высоту экрана */
-    justify-content: center; /* Вертикальное центрирование */
+    min-height: 100vh;
+    justify-content: center; 
 }
 
 .snowmobile-routes-section h2 {
@@ -1408,7 +1331,7 @@ table tr:hover {
 .snowmobile-routes-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Горизонтальное центрирование карточек */
+    justify-content: center;
     gap: 30px;
     width: 100%;
 }
@@ -1430,12 +1353,11 @@ table tr:hover {
 
 .snowmobile-route-card img {
     width: 100%;
-    height: 100%; /* Фиксированная высота изображения */
+    height: 100%; 
     object-fit: cover;
     display: block;
 }
 
-/* Контент внутри карточки */
 .snowmobile-route-content {
     padding: 20px;
     text-align: center;
@@ -1458,7 +1380,6 @@ table tr:hover {
     margin-bottom: 30px;
 }
 
-/* Стили для секции с описанием джиппинга */
 .balloon-description-section {
     padding: 60px 20px;
     background-color: #fff;
@@ -1532,9 +1453,8 @@ table tr:hover {
     transform: scale(1.05);
 }
 
-/* Стили для секции с маршрутами джиппинга */
 .balloon-hero-section {
-    background-image: url('../images/ballon-hero.jpg');
+    background-image: url('../images/ballon-hero.webp');
     background-size: cover;
     background-position: center -350px;
     height: 60vh;
@@ -1548,15 +1468,15 @@ table tr:hover {
     position: relative;
 }
 
-/* Секция с маршрутами джиппинга - центрирование на всем экране */
+
 .balloon-routes-section {
     padding: 60px 20px;
     background-color: #f9f9f9;
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh; /* Занимает всю высоту экрана */
-    justify-content: center; /* Вертикальное центрирование */
+    min-height: 100vh; 
+    justify-content: center; 
 }
 
 .balloon-routes-section h2 {
@@ -1578,7 +1498,7 @@ table tr:hover {
 .balloon-routes-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Горизонтальное центрирование карточек */
+    justify-content: center;
     gap: 30px;
     width: 100%;
 }
@@ -1600,12 +1520,11 @@ table tr:hover {
 
 .balloon-route-card img {
     width: 100%;
-    height: 100%; /* Фиксированная высота изображения */
+    height: 100%;
     object-fit: cover;
     display: block;
 }
 
-/* Контент внутри карточки */
 .balloon-route-content {
     padding: 20px;
     text-align: center;
@@ -1620,7 +1539,7 @@ table tr:hover {
 }
 
 .about-hero-section {
-    background-image: url('../images/about-hero.jpg');
+    background-image: url('../images/about-hero.webp');
     background-size: cover;
     background-position: center;
     height: 60vh;
@@ -1759,7 +1678,7 @@ table tr:hover {
 }
 
 .blog-hero-section {
-    background-image: url('../images/blog-hero.jpg');
+    background-image: url('../images/blog-hero.webp');
     background-size: cover;
     background-position: center;
     height: 60vh;
@@ -1842,7 +1761,7 @@ table tr:hover {
 }
 
 .contacts-hero-section {
-    background-image: url('../images/contacts-hero.jpg');
+    background-image: url('../images/contacts-hero.webp');
     background-size: cover;
     background-position: center;
     height: 60vh;
@@ -1946,237 +1865,6 @@ table tr:hover {
     border: none;
 }
 
-@media (max-width: 768px) {
-    /* Общие стили для мобильных устройств */
-    body {
-        font-size: 14px; /* Уменьшаем размер шрифта для мобильных устройств */
-    }
-
-    /* Шапка */
-    header {
-        flex-direction: column; /* Элементы шапки в столбик */
-        padding: 10px;
-    }
-
-    .logo img {
-        height: 50px; /* Уменьшаем логотип */
-    }
-
-    nav ul {
-        flex-direction: column; /* Меню в столбик */
-        align-items: center;
-    }
-
-    nav ul li {
-        margin: 10px 0; /* Увеличиваем отступы между пунктами меню */
-    }
-
-    .contact-info {
-        flex-direction: column; /* Контакты в столбик */
-        align-items: center;
-        margin-top: 10px;
-    }
-
-    .contact-info a,
-    .contact-info button {
-        margin: 5px 0; /* Уменьшаем отступы */
-    }
-
-    /* Герой-секции */
-    .hero-section,
-    .quad-hero-section,
-    .atv-hero-section,
-    .rafting-hero-section,
-    .snowmobile-hero-section,
-    .balloon-hero-section,
-    .about-hero-section,
-    .blog-hero-section,
-    .contacts-hero-section {
-        height: 50vh; /* Уменьшаем высоту герой-секции */
-        padding: 10px;
-    }
-
-    .hero-section h1,
-    .quad-hero-section h1,
-    .atv-hero-section h1,
-    .rafting-hero-section h1,
-    .snowmobile-hero-section h1,
-    .balloon-hero-section h1,
-    .about-hero-section h1,
-    .blog-hero-section h1,
-    .contacts-hero-section h1 {
-        font-size: 2em; /* Уменьшаем размер заголовка */
-    }
-
-    .hero-section p,
-    .quad-hero-section p,
-    .atv-hero-section p,
-    .rafting-hero-section p,
-    .snowmobile-hero-section p,
-    .balloon-hero-section p,
-    .about-hero-section p,
-    .blog-hero-section p,
-    .contacts-hero-section p {
-        font-size: 1em; /* Уменьшаем размер текста */
-    }
-
-    /* Секции с описанием */
-    .about-us-content,
-    .quad-description-content,
-    .atv-description-content,
-    .rafting-description-content,
-    .snowmobile-description-content,
-    .balloon-description-content,
-    .contacts-info-content {
-        flex-direction: column; /* Элементы в столбик */
-        align-items: center;
-        text-align: center;
-    }
-
-    .about-us-text,
-    .quad-description-text,
-    .atv-description-text,
-    .rafting-description-text,
-    .snowmobile-description-text,
-    .balloon-description-text,
-    .contacts-info-text {
-        max-width: 100%; /* Полная ширина текста */
-        margin-bottom: 20px;
-    }
-
-    .about-us-image,
-    .quad-description-image,
-    .atv-description-image,
-    .rafting-description-image,
-    .snowmobile-description-image,
-    .balloon-description-image,
-    .contacts-info-map {
-        max-width: 100%; /* Полная ширина изображения */
-        margin-left: 0;
-    }
-
-    /* Сетки карточек */
-    .services-grid,
-    .quad-routes-grid,
-    .atv-routes-grid,
-    .rafting-routes-grid,
-    .snowmobile-routes-grid,
-    .balloon-routes-grid,
-    .reviews-grid,
-    .blog-posts-grid {
-        grid-template-columns: 1fr; /* Одна колонка на мобильных устройствах */
-        gap: 10px;
-    }
-
-    .service-card,
-    .quad-route-card,
-    .atv-route-card,
-    .rafting-route-card,
-    .snowmobile-route-card,
-    .balloon-route-card,
-    .review-card,
-    .blog-post-card {
-        width: 100%; /* Полная ширина карточки */
-    }
-
-    /* Футер */
-    .footer-content {
-        flex-direction: column; /* Элементы футера в столбик */
-        align-items: center;
-    }
-
-    .footer-links {
-        margin: 10px 0;
-    }
-
-    .footer-social img {
-        margin: 5px;
-    }
-
-    /* Модальное окно */
-    .modal-content {
-        width: 90%; /* Уменьшаем ширину модального окна */
-        padding: 10px;
-    }
-
-    .modal-content input,
-    .modal-content textarea {
-        font-size: 0.9em; /* Уменьшаем размер текста в полях ввода */
-    }
-
-    .modal-content button {
-        font-size: 1em; /* Уменьшаем размер кнопки */
-    
-    
-    }
-
-    .quad-routes-grid,
-    .atv-routes-grid,
-    .rafting-routes-grid,
-    .snowmobile-routes-grid,
-    .balloon-routes-grid {
-        grid-template-columns: 1fr; /* Одна колонка */
-        gap: 10px;
-    }
-
-    .quad-route-card,
-    .atv-route-card,
-    .rafting-route-card,
-    .snowmobile-route-card,
-    .balloon-route-card {
-        width: 100%; /* Полная ширина */
-    }
-
-    .quad-route-card img,
-    .atv-route-card img,
-    .rafting-route-card img,
-    .snowmobile-route-card img,
-    .balloon-route-card img {
-        height: 200px; /* Фиксированная высота изображения */
-}
-}
-
-a, button {
-    transition: all 0.3s ease;
-}
-
-.service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-
-/* Кнопка "Наверх" */
-.back-to-top {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 50px;
-    height: 50px;
-    background-color: #007BFF;
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    opacity: 0;
-    transition: opacity 0.3s;
-    z-index: 999;
-}
-
-.back-to-top.visible {
-    opacity: 1;
-}
-
-.back-to-top:hover {
-    background-color: #0056b3;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
 a, button {
     transition: all 0.3s ease;
 }
@@ -2229,7 +1917,6 @@ a, button {
     margin-bottom: 30px;
 }
 
-/* Стили для секции с описанием джиппинга */
 .jeeping-description-section {
     padding: 60px 20px;
     background-color: #fff;
@@ -2303,9 +1990,8 @@ a, button {
     transform: scale(1.05);
 }
 
-/* Стили для секции с маршрутами джиппинга */
 .jeeping-hero-section {
-    background-image: url('../images/jeeping-hero.jpg');
+    background-image: url('../images/jeeping-hero.webp');
     background-size: cover;
     background-position: center -350px;
     height: 60vh;
@@ -2319,15 +2005,14 @@ a, button {
     position: relative;
 }
 
-/* Секция с маршрутами джиппинга - центрирование на всем экране */
 .jeeping-routes-section {
     padding: 60px 20px;
     background-color: #f9f9f9;
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh; /* Занимает всю высоту экрана */
-    justify-content: center; /* Вертикальное центрирование */
+    min-height: 100vh; 
+    justify-content: center;
 }
 
 .jeeping-routes-section h2 {
@@ -2349,7 +2034,7 @@ a, button {
 .jeeping-routes-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Горизонтальное центрирование карточек */
+    justify-content: center; 
     gap: 30px;
     width: 100%;
 }
@@ -2371,12 +2056,11 @@ a, button {
 
 .jeeping-route-card img {
     width: 100%;
-    height: 100%; /* Фиксированная высота изображения */
+    height: 100%; 
     object-fit: cover;
     display: block;
 }
 
-/* Контент внутри карточки */
 .jeeping-route-content {
     padding: 20px;
     text-align: center;
@@ -2402,45 +2086,11 @@ a, button {
     font-size: 1em;
     font-weight: 500;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease;
     opacity: 0.9;
 }
 
 .book-button:hover {
     background-color: #0056b3;
-    transform: scale(1.05);
     opacity: 1;
-}
-
-/* Адаптивные стили */
-@media (max-width: 768px) {
-    .jeeping-hero-section {
-        height: 50vh;
-        background-position: center;
-    }
-    
-    .jeeping-hero-section h1 {
-        font-size: 2em;
-    }
-    
-    .jeeping-hero-section p {
-        font-size: 1em;
-    }
-    
-    .jeeping-description-content {
-        flex-direction: column;
-    }
-    
-    .jeeping-description-text,
-    .jeeping-description-image {
-        max-width: 100%;
-    }
-    
-    .jeeping-description-image {
-        margin: 30px 0 0 0;
-    }
-    
-    .jeeping-routes-grid {
-        grid-template-columns: 1fr;
-    }
 }

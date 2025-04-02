@@ -55,24 +55,22 @@ window.addEventListener('scroll', () => {
     }
     
     if (currentScroll > lastScroll && !header.classList.contains('header-hidden')) {
-        // Скролл вниз - скрываем header
+
         header.classList.add('header-hidden');
     } else if (currentScroll < lastScroll && header.classList.contains('header-hidden')) {
-        // Скролл вверх - показываем header
+
         header.classList.remove('header-hidden');
     }
     
     lastScroll = currentScroll;
 });
 
-// Параллакс эффект для hero-section
 window.addEventListener('scroll', () => {
     const hero = document.querySelector('.hero-section');
     const scrollPosition = window.pageYOffset;
     hero.style.backgroundPositionY = scrollPosition * 0.5 + 'px';
 });
 
-// Лоадер страницы
 window.addEventListener('load', function() {
     const loader = document.querySelector('.loader');
     loader.style.display = 'none';
@@ -110,25 +108,3 @@ function orderTour(tourName = '') {
     
     modal.style.display = 'flex';
 }
-
-document.getElementById('orderForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    const name = this.elements[0].value.trim();
-    const phone = this.elements[1].value.trim();
-    
-    if (!name || !phone) {
-        alert('Пожалуйста, заполните все обязательные поля');
-        return;
-    }
-    
-    if (!/^[\d\+\(\)\s-]{10,15}$/.test(phone)) {
-        alert('Пожалуйста, введите корректный номер телефона');
-        return;
-    }
-    
-    // Здесь должна быть отправка формы на сервер
-    alert('Ваш заказ успешно отправлен! Мы свяжемся с вами в ближайшее время.');
-    closeModal();
-    this.reset();
-});
